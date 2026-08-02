@@ -970,6 +970,52 @@ footer{
   margin-bottom:10px;
 }
 
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .hero {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 .footer-tagline{
   font-size:20px;
   margin-bottom:20px;
