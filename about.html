@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | DAMCARE</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+    <img src="images/logo.png" alt="DAMCARE Logo">
+    <h1><span class="dam">DAM</span><span class="care">care</span></h1>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html" class="active">About</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="index.html#contact">Contact</a></li>
+
+</ul>
+
+<a href="index.html#contact" class="quote-btn">
+Book Inspection
+</a>
+
+</nav>
+
+</header>
+
+<!-- Hero -->
+
+<section class="about-hero">
+<div class="overlay">
+
+<h1 class = "fade-up">About DAMCARE</h1>
+
+<p class="fade-up">
+Trusted Waterproofing Experts Protecting Homes,
+Buildings and Businesses Across Kerala.
+</p>
+
+</div>
+
+</section>
+<!-- About Company -->
+
+<section class="about-company">
+
+<div class="about-image">
+
+<img src="images/about.jpg" alt="DAMCARE">
+
+</div>
+
+<div class="about-content">
+
+<span>WHO WE ARE</span>
+
+<h2>Professional Waterproofing Solutions</h2>
+
+<p>
+
+DAMCARE is a trusted waterproofing company dedicated to
+providing reliable and long-lasting protection for residential,
+commercial and industrial buildings.
+
+</p>
+
+<p>
+
+Our experienced team uses premium waterproofing products
+and advanced application techniques to deliver durable
+results for roofs, terraces, bathrooms, basements and water tanks.
+
+</p>
+
+<a href="contact.html" class="btn">
+Book Free Inspection
+</a>
+
+</div>
+
+</section>
+
+<!-- Mission Vision -->
+
+<section class="mission">
+
+<div class="mission-card">
+
+<i class="fa-solid fa-bullseye"></i>
+
+<h3>Our Mission</h3>
+
+<p>
+
+To provide reliable waterproofing solutions that
+protect every structure from water damage.
+
+</p>
+
+</div>
+
+<div class="mission-card">
+
+<i class="fa-solid fa-eye"></i>
+
+<h3>Our Vision</h3>
+
+<p>
+
+To become Kerala's most trusted waterproofing company
+through innovation, quality and customer satisfaction.
+
+</p>
+
+</div>
+
+<div class="mission-card">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>Our Values</h3>
+
+<p>
+
+Quality workmanship,
+honesty,
+customer trust and
+long-term protection.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Why Choose -->
+
+<section class="why-about">
+
+<h2>Why Choose DAMCARE?</h2>
+
+<div class="why-grid">
+
+<div>
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Premium Products</h3>
+
+<p>High-quality waterproofing materials.</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-user-check"></i>
+
+<h3>Expert Team</h3>
+
+<p>Experienced professionals for every project.</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>On-Time Delivery</h3>
+
+<p>Projects completed within schedule.</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>Support</h3>
+
+<p>Dedicated customer assistance before and after service.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="counter-section">
+
+<div class="counter-box">
+
+<h2>500+</h2>
+
+<p>Projects Completed</p>
+
+</div>
+
+<div class="counter-box">
+
+<h2>300+</h2>
+
+<p>Happy Clients</p>
+
+</div>
+
+<div class="counter-box">
+
+<h2>10+</h2>
+
+<p>Years Experience</p>
+
+</div>
+
+<div class="counter-box">
+
+<h2>24/7</h2>
+
+<p>Customer Support</p>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Need Waterproofing Solutions?</h2>
+
+<p>
+
+Get a professional inspection from DAMCARE today.
+
+</p>
+
+<a href="index.html#contact" class="cta-btn">
+
+Schedule Free Inspection
+
+</a>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<div class="footer-logo">
+
+<span style="color:white;">DAM</span>
+
+<span style="color:#D4A017;">CARE</span>
+
+</div>
+
+<p>
+
+Professional Waterproofing Solutions
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 DAMCARE. All Rights Reserved.
+
+</p>
+
+</footer>
+<script>
+const elements = document.querySelectorAll(
+".fade-up, .fade-left, .fade-right, .zoom"
+);
+
+const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{
+    threshold:0.2
+});
+
+elements.forEach(el=>{
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>
