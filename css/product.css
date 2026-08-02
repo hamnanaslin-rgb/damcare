@@ -1,0 +1,438 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#222;
+    line-height:1.6;
+}
+
+/* Header */
+
+/* ================= NAVBAR ================= */
+
+header{
+    position:sticky;
+    top:0;
+    width:100%;
+    background:#fff;
+    z-index:1000;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+
+.navbar{
+    width:90%;
+    max-width:1300px;
+    height:85px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* Logo */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+}
+
+.logo img{
+    width:65px;
+}
+
+.logo h2{
+    color:#0B2E6B;
+    font-size:32px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#D4A017;
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:45px;
+}
+
+.nav-links li{
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+    position:relative;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    color:#D4A017;
+}
+
+/* CTA Button */
+
+.enquiry-btn{
+    text-decoration:none;
+    background:#D4A017;
+    color:white;
+    padding:13px 28px;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.enquiry-btn:hover{
+    background:#0B2E6B;
+    transform:translateY(-2px);
+}
+
+/* Hero */
+
+.product-hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    max-width:1200px;
+    margin:70px auto;
+    padding:20px;
+}
+
+.product-image{
+    flex:1;
+    text-align:center;
+}
+
+.product-image img{
+    width:100%;
+    max-width:420px;
+    border-radius:20px;
+}
+
+.product-info{
+    flex:1;
+}
+
+.badge{
+    display:inline-block;
+    background:#0f1d4f;
+    color:#fff;
+    padding:10px 25px;
+    border-radius:30px;
+    margin-bottom:20px;
+}
+
+.product-info h1{
+    font-size:60px;
+    color:#111;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    font-size:22px;
+    color:#666;
+    margin-bottom:25px;
+}
+
+.product-info ul{
+    list-style:none;
+    padding:0;
+}
+
+.product-info ul li{
+    margin:15px 0;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    background:#f0b400;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* Application Areas */
+
+.application{
+    padding:90px 20px;
+    background:#081d54;
+}
+
+.application h2{
+    text-align:center;
+    font-size:42px;
+    color:#fff;
+    margin-bottom:50px;
+}
+
+.area-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:70px;
+}
+
+.area-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+}
+
+.area-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.area-card:hover img{
+    transform:scale(1.08);
+}
+
+
+
+.overlay h3{
+    font-size:28px;
+    color:#fff;
+}
+
+.overlay p{
+    font-size:16px;
+    color:#fff;
+}
+
+
+
+/* CTA */
+
+.cta{
+    padding:90px 20px;
+    text-align:center;
+}
+
+.cta h2{
+    color:#0c2d75;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    color:#666;
+    margin-bottom:35px;
+}
+
+.cta a{
+    display:inline-block;
+    background:#d8a21f;
+    color:#000;
+    text-decoration:none;
+    padding:16px 40px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.cta a:hover{
+    background:#0c2d75;
+    color:#fff;
+}
+
+/* Footer */
+
+footer{
+    background:#081d54;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.features li{
+justify-content:center;
+}
+
+.application h2,
+.process h2,
+.cta h2{
+font-size:34px;
+}
+
+.step{
+padding:30px;
+}
+
+}
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.product-hero{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.product-image img{
+    width:420px;
+}
+
+.product-info{
+    flex:1;
+}
+
+.product-info h1{
+    font-size:52px;
+    color:#0B2E6B;
+}
+
+.product-info ul{
+    margin:30px 0;
+}
+
+.product-info li{
+    margin:15px 0;
+    font-size:20px;
+}
+
+.book-btn{
+    background:#F4B400;
+    color:#0B2E6B;
+    padding:16px 35px;
+    border-radius:50px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+/* ==========================
+   ABOUT PAGE ANIMATIONS
+========================== */
+
+/* Fade Up Animation */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(60px);
+    transition:all 0.8s ease;
+}
+
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Fade Left */
+
+.fade-left{
+    opacity:0;
+    transform:translateX(-80px);
+    transition:all 0.8s ease;
+}
+
+.fade-left.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* Fade Right */
+
+.fade-right{
+    opacity:0;
+    transform:translateX(80px);
+    transition:all 0.8s ease;
+}
+
+.fade-right.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* Zoom Animation */
+
+.zoom{
+    opacity:0;
+    transform:scale(.8);
+    transition:all .8s ease;
+}
+
+.zoom.show{
+    opacity:1;
+    transform:scale(1);
+}
+
+/* Floating Image */
+
+.about-image img{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+/* Button Hover */
+
+.about-btn{
+    transition:.3s;
+}
+
+.about-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+/* Card Hover */
+
+.about-card{
+    transition:.4s;
+}
+
+.about-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
