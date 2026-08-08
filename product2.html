@@ -16,26 +16,31 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <!-- HEADER -->
 
-<header>
+ <header class="navbar">
 
-<nav class="navbar">
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="DAMCARE Logo">
+        <h1><span class="dam">DAM</span><span class="care">care</span></h1>
+    </a>
 
-<a href="index.html" class="logo">
-    <img src="images/logo.png" alt="">
-    <h2>DAM<span>care</span></h2>
-</a>
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
 
-<ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#application">Applications</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-</ul>
-
-<a href="index.html#contact" class="enquiry-btn">Book Inspection</a>
-
-</nav>
-
-</header>
+    <nav class="nav-links" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#clients">Clients</a>
+    </nav>
+   
+     <a href="index.html#contact" class="quote-btn">
+        Book Inspection
+    </a>
+    
+  </header>
 
 <!-- HERO -->
  <section class="product-hero">
@@ -181,10 +186,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <section class="download">
 
-    <a href="brochure/DAMCOAT-2K.pdf" class="btn">
-       Download Brochure
-    </a>
-
     <a href="index.html#contact" class="btn">
         Book Free Inspection
     </a>
@@ -193,13 +194,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <!-- FOOTER -->
 
-<footer>
+ <footer>
+  <div class="footer-logo">
+    <span class="dam">DAM</span><span class="care">care</span>
+  </div>
 
-    <p>
-      © 2026 DAMCare. All Rights Reserved.
-    </p>
+  <p class="footer-tagline">Seal Today, Secure Tomorrow</p>
 
+  <div class="footer-address">
+    <p><strong>DAMcare Waterproofing Solutions</strong></p>
+    <p>Door No. /430 A, Ground Floor, Ganapathi Sakthi Road</p>
+    <p>Coimbatore, Tamil Nadu – 641006</p>
+    <p>📞 +91 7356315608</p>
+    <p>✉ info@damcare26.in</p>
+  </div>
+
+  <p class="copyright">
+    © 2026 DAMcare Waterproofing Solutions. All rights reserved.
+  </p>
 </footer>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/917356315608" class="whatsapp" target="_blank">
+  💬
+  </a>
+
+  <script>
+const toggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("mobile-menu");
+
+toggle.addEventListener("click", function() {
+    menu.classList.toggle("active");
+});
+</script>
 
 </body>
 </html>

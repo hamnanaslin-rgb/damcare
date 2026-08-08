@@ -17,28 +17,31 @@
 
 <!-- Header -->
 
-<header>
-    <nav class="navbar">
+<header class="navbar">
 
-        <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="DAMCARE Logo">
-            <h1><span class="dam">DAM</span><span class="care">care</span></h1>
-        </a>
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="DAMCARE Logo">
+        <h1><span class="dam">DAM</span><span class="care">care</span></h1>
+    </a>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products.html" class="active">Products</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
 
-        <a href="index.html#contact" class="enquiry-btn">
-            Book Inspection
-        </a>
-
+    <nav class="nav-links" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#clients">Clients</a>
     </nav>
-</header>
+   
+     <a href="index.html#contact" class="quote-btn">
+        Book Inspection
+    </a>
+    
+  </header>
 
 <!-- Hero -->
 
@@ -191,23 +194,39 @@ DAMCOAT 2K is a two components flexible cementitious acrylic waterproofing membr
 <!-- Footer -->
 
 <footer>
+  <div class="footer-logo">
+    <span class="dam">DAM</span><span class="care">care</span>
+  </div>
 
-<div class="footer-content">
+  <p class="footer-tagline">Seal Today, Secure Tomorrow</p>
 
-<h2>DAMCARE</h2>
+  <div class="footer-address">
+    <p><strong>DAMcare Waterproofing Solutions</strong></p>
+    <p>Door No. /430 A, Ground Floor, Ganapathi Sakthi Road</p>
+    <p>Coimbatore, Tamil Nadu – 641006</p>
+    <p>📞 +91 7356315608</p>
+    <p>✉ info@damcare26.in</p>
+  </div>
 
-<p>
-Professional Waterproofing Experts Protecting
-Homes & Buildings Across Kerala.
-</p>
-
-<p>
-© 2026 DAMCARE. All Rights Reserved.
-</p>
-
-</div>
-
+  <p class="copyright">
+    © 2026 DAMcare Waterproofing Solutions. All rights reserved.
+  </p>
 </footer>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/917356315608" class="whatsapp" target="_blank">
+  💬
+  </a>
+
+
+  <script>
+     const toggle = document.getElementById("menu-toggle");
+     const menu = document.getElementById("mobile-menu");
+
+     toggle.addEventListener("click", function() {
+     menu.classList.toggle("active");
+     });
+ </script>
 
 </body>
+
 </html>
